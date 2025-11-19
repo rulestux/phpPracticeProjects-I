@@ -1,3 +1,4 @@
+/* FONT */
 * {
   font-family: "Roboto", sans-serif;
   /* zerando espaçamentos: */
@@ -5,6 +6,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* PAGE */
 
 html {
   /* altura mínima == tela do usuário: 100vh (view-height), o que mantém o
@@ -27,36 +30,63 @@ main {
 }
 
 /* NAVBAR */
-#logo {
-  position: absolute;
-  top: 10px;
-  left: 10%;
-}
-
-/* tamanho do logo: */
-#logo img {
-  width: 50px;
-}
-
-/* configurações gerais da navbar: */
 #navbar {
-  /* modo flexbox para liberdade para acertar os elementos: */
+  /* modo flexbox para alinhar os elementos: */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #161616;
+  background-color: #141417;
   /* padding para espaçamento interno da navbar: */
-  padding: 20px;
+  padding: 70px;
   text-transform: uppercase;
   list-style: none;
 }
 
 /* configurações gerais dos itens na navbar: */
 #navbar li {
-  /* margem dos itens, com largura e distanciamento entre itens: */
-  margin: 0 10px;
-  /* padding para espaçamento interno do item: */
-  padding: 5px;
+  /* margem dos itens, na altura 0 e na lateral 15, para manter o espaçamento
+   * entre os itens: */
+  margin: 0 15px;
 }
 
-#navbar
+/* configurações do texto dos itens: */
+#navbar .nav-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* configurações do efeito do cursor sobre os itens, 'hover': */
+#navbar .nav-link:hover {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* configurações de posição da logo: */
+#logo {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+/* tamanho da logo: */
+#logo img {
+  width: 160px;
+}
+
+/* FOOTER */
+
+footer {
+  /* ocupar toda a extensão da página: */
+  width: 100%;
+  /* posição absoluta no final da página: */
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  background-color: #141417;
+  color: #ccc;
+  padding: 20px 0;
+}

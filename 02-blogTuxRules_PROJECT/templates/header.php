@@ -23,6 +23,7 @@ include_once("helpers/url.php");
 </head>
 <body>
     <header>
+        <!-- LOGO - configurado para ser link para home -->
         <a href="<?= $BASE_URL ?>" id="logo">
             <img src="<?= $BASE_URL ?>/img/logo.png" alt="TuxRules Blog">
         </a>
