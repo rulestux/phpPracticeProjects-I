@@ -1,9 +1,62 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* zerando espaçamentos: */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+html {
+  /* altura mínima == tela do usuário: 100vh (view-height), o que mantém o
+   * tamanho da página sempre igual ao tamanho da tela: */
+  min-height: 100vh;
+  /* posição relativa em relação a elementos de posição absoluta, feito o
+   * 'footer': */
+  position: relative;
+}
 
+/* body com configurações de cores de background e texto: */
 body {
   background-color: #1a1a20;
   color: #dddddd;
 }
+
+/* posição da tag 'main': */
+main {
+  margin-bottom: 250px;
+}
+
+/* NAVBAR */
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10%;
+}
+
+/* tamanho do logo: */
+#logo img {
+  width: 50px;
+}
+
+/* configurações gerais da navbar: */
+#navbar {
+  /* modo flexbox para liberdade para acertar os elementos: */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  /* padding para espaçamento interno da navbar: */
+  padding: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+/* configurações gerais dos itens na navbar: */
+#navbar li {
+  /* margem dos itens, com largura e distanciamento entre itens: */
+  margin: 0 10px;
+  /* padding para espaçamento interno do item: */
+  padding: 5px;
+}
+
+#navbar
