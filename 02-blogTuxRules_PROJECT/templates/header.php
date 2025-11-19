@@ -11,14 +11,15 @@ include_once("helpers/url.php");
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TuxRules Blog</title>
-    <!-- chamada padrão do arquivo CSS:
-    <link rel="stylesheet" href="styles.css">
-        chamada de arquivo CSS com PHP, utilizando HELPER 'url.php': -->
+    <!-- STYLES -->
+    <!-- chamada padrão do arquivo CSS: -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- chamada de arquivo CSS com PHP, utilizando o HELPER 'url.php': -->
     <link rel="stylesheet" href="<?= $BASE_URL ?>/css/styles.css">
-    <!-- Google Font Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT Montserrat -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
 <header>
