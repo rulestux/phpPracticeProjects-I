@@ -2,6 +2,10 @@
 
 // importando HELPER 'url.php':
 include_once("helpers/url.php");
+// importando DATA:
+include_once("data/articles.php");
+include_once("data/categories.php");
+
 
 ?>
 

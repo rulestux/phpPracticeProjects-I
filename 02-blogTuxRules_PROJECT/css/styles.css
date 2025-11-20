@@ -31,6 +31,8 @@ main {
 
 /* NAVBAR */
 #navbar {
+  width: 100%;
+  top: 0;
   /* modo flexbox para alinhar os elementos: */
   display: flex;
   align-items: center;
