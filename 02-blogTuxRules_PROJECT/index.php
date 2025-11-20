@@ -11,7 +11,7 @@ include_once("templates/header.php");
         <p>The ultimate Linux and Programming Blog.</p>
     </div>
     <div id="articles-container">
-        <?php foreach($articles as $article): ?>
+        <?php foreach ($articles as $article): ?>
             <div class="article-box">
                 <img src="<?= $BASE_URL ?>/img/<?= $article['img'] ?>" alt="<?= $article['title'] ?>">
                 <h2 class="article-title">
@@ -22,7 +22,7 @@ include_once("templates/header.php");
                 </h2>
                 <p class="article-description"><?= $article['description'] ?></p>
                 <div class="tags-container">
-                    <?php foreach($article['tags'] as $tag): ?>
+                    <?php foreach ($article['tags'] as $tag): ?>
                         <a href="#"><?= $tag ?></a>
                     <?php endforeach; ?>
                 </div>
