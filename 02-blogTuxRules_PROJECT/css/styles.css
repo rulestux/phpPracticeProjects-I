@@ -78,6 +78,81 @@ main {
   width: 160px;
 }
 
+/* HOME */
+#title-container {
+  min-width: 500px;
+  text-align: center;
+  /* para afastar da barra de navegação: */
+  margin-top: 30px;
+}
+
+#title-container h1 {
+  font-size: 50px;
+}
+
+#title-container p {
+  margin-top: 10px;
+  color: #999;
+}
+
+#articles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  /* para alinhar elementos um sobre o outro: */
+  flex-wrap: wrap;
+}
+
+.article-box:first-child {
+  /* para o primeiro artigo ocupar toda a div, mas alinhando as laterais
+   * com os artigos abaixo: */
+  min-width: 90%;
+}
+
+.article-box {
+  flex: 1 1 0%;
+  margin: 0 1%;
+  margin-bottom: 20px;
+}
+
+.article-box img {
+  width: 100%;
+}
+
+.article-box .article-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.article-box .article-title a {
+  color: #ccc;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.article-box .article-title a:hover {
+  font-size: 24.2px;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.article-box .artcile-description {
+  color: #888;
+}
+
+.tags-container {
+  margin-top: 10px;
+}
+
+.tags-container a {
+  font-size: 12px;
+  color: #555;
+  display: inline-block;
+  margin-right: 5px;
+}
+
 /* FOOTER */
 
 footer {

@@ -31,7 +31,7 @@ include_once("data/categories.php");
         <a href="<?= $BASE_URL ?>" id="logo">
             <img src="<?= $BASE_URL ?>/img/logo.png" alt="TuxRules Blog">
         </a>
-        <!-- BARRA DE NAVEGAÇÃO -->
+        <!-- NAVBAR -->
         <nav>
             <ul id="navbar">
             <li><a href="<?= $BASE_URL ?>" class="nav-link">Home</a></li>

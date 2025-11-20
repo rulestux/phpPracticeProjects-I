@@ -24,7 +24,7 @@ $articles = [
     ],
     [
         'id' => 4,
-        'title' => 'Programmin in PHP',
+        'title' => 'Programming in PHP',
         'description' => 'In this post, you will learn everything you need to become a good PHP programmer!',
         'tags' => ['Programming', 'PHP', 'Programming Logic'],
         'img' => 'prog-4.jpg'
