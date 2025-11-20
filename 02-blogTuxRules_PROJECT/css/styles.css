@@ -71,7 +71,6 @@ main {
 /* configurações de posição da logo: */
 #logo {
   position: absolute;
-  top: 0;
   left: 10%;
 }
 
@@ -164,7 +163,7 @@ main {
    * outra para a barra de navegação lateral: */
   grid-template-columns: 75% 25%;
   grid-template-rows: auto;
-  grid-template-areas: "main sidebar";
+  grid-template-areas: "main" "sidebar";
   grid-gap: 10px;
   padding-top: 30px;
   max-width: 1200px;
@@ -246,4 +245,61 @@ footer {
   background-color: #141417;
   color: #ccc;
   padding: 20px 0;
+}
+
+/* MOBILE WEB RESPONSIVENESS */
+
+/* media query: quando a mídia for menor que 480px... */
+@media(max-width: 480px) {
+
+  /* HOME */
+  header {
+    width: 100%;
+  }
+
+ #navbar {
+    padding: 20px;
+    padding-top: 60%;
+  }
+
+ #logo {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    max-width: 160px;
+    left: 30%;
+  }
+
+  #title-container {
+    min-width: 100%;
+    margin-top: 20px;
+  }
+
+  #articles-container {
+    margin-top: 20px;
+  }
+
+  .article-box {
+    /* flex configurado para ocupar sempre toda a largura da tela, independente
+     * do artigo: */
+    flex: 100% 1 0;
+    padding: 15px;
+    margin: 0;
+  }
+
+  /* ARTICLES */
+
+  #article-container {
+    /* conteúdo em única coluna: */
+    grid-template-columns: 100%;
+    /* conteúdo ordenando elementos um sobre o outro na mesma coluna,
+     * sinalizado pelo 'sidebar' na linha abixo de 'main': */
+    grid-template-areas: "main"
+    "sidebar";
+    padding: 15px;
+  }
+
+  .img-container img {
+    width: 100%;
+  }
 }
