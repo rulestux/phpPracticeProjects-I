@@ -43,8 +43,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
            </div>
         </div>
     </div>
-</main>
-
 <aside id="nav-container">
     <h3 id="tags-title">Tags</h3>
     <ul id="tag-list">
@@ -58,8 +56,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
             <li><a href="#"><?= $category ?></a></li>
         <?php endforeach; ?>
     </ul>
-
 </aside>
+</main>
 
 <?php
 

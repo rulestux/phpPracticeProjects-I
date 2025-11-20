@@ -1,4 +1,5 @@
 /* FONT */
+
 * {
   font-family: "Roboto", sans-serif;
   /* zerando espaçamentos: */
@@ -30,6 +31,7 @@ main {
 }
 
 /* NAVBAR */
+
 #navbar {
   width: 100%;
   top: 0;
@@ -79,6 +81,7 @@ main {
 }
 
 /* HOME */
+
 #title-container {
   min-width: 500px;
   text-align: center;
@@ -97,8 +100,7 @@ main {
 
 #articles-container {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px;
   display: flex;
   /* para alinhar elementos um sobre o outro: */
   flex-wrap: wrap;
@@ -138,7 +140,7 @@ main {
   font-weight: bold;
 }
 
-.article-box .artcile-description {
+.article-box .article-description {
   color: #888;
 }
 
@@ -151,6 +153,84 @@ main {
   color: #555;
   display: inline-block;
   margin-right: 5px;
+}
+
+/* ARTICLES */
+
+#article-container {
+  /* disposição paralela do display, em colunas: */
+  display: grid;
+  /* espaço ocupado por cada coluna, nesse caso, duas: uma para o artigo e
+   * outra para a barra de navegação lateral: */
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "main sidebar";
+  grid-gap: 10px;
+  padding-top: 30px;
+  max-width: 1200px;
+  margin: 30px;
+  margin-bottom: 250px;
+}
+
+.content-container {
+  grid-area: main;
+}
+
+#main-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#article-description {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.article-content {
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.img-container {
+  margin-bottom: 30px;
+}
+
+.img-container img {
+  width: 60%;
+}
+
+/* ASSIDE NAV */
+
+.nav-container {
+  grid-area: sidebar;
+}
+
+#tags-title, #categories-title {
+  font-size: 24px;
+  background-color: #141417;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  /* afinar traço da fonte: */
+  font-weight: 300;
+}
+
+#tag-list, #categories-list {
+  list-style: none;
+  background-color: #303038;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+#tag-list a, #categories-list a {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+#tag-list a:hover, #categories-list a:hover {
+  color: #fff;
+  font-style: bold;
+  font-size: 16.5px;
 }
 
 /* FOOTER */
