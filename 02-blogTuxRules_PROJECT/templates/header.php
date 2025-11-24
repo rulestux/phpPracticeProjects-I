@@ -20,6 +20,8 @@ include_once("data/categories.php");
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <!-- chamada de arquivo CSS com PHP, utilizando o HELPER 'url.php': -->
     <link rel="stylesheet" href="<?= $BASE_URL ?>/css/styles.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="<?= $BASE_URL ?>/img/favicon.ico>" type="image/x-icon">
     <!-- GOOGLE FONT ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
